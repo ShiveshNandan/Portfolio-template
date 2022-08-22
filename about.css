@@ -1,0 +1,21 @@
+.about_bg{
+    background: #000;
+}
+.about{
+    width: 80vw;
+    margin:10rem auto;
+    color: aliceblue;
+    padding: 2rem;
+}
+.photo{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    padding: 2rem;
+}
+.boxes{
+    display: flex;
+}
+.box1{
+    padding: 2rem;
+}
