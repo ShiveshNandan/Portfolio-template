@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div>Navbar</div>
+    <>
+    <div className="name">SHIVESH NANDAN</div>
+    <div className="options"></div>
+    </>
   )
 }
