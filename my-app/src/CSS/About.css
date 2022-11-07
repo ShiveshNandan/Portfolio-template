@@ -28,6 +28,7 @@
   }
   .about p{
     margin: 1vw 1vw 1vw 1vw;
+    
   }
 
 .pillar{
@@ -45,4 +46,8 @@
     border: 2px solid blue;
     border-radius: 1vw;
     margin: 9.5vw 4vw 0vw -0.1vw;
+    background: url("../Assets/new2.jpeg");
+    background-position-y:2vh ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

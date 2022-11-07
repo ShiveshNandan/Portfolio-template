@@ -11,7 +11,7 @@ export default function Main() {
     window.addEventListener("scroll", function () {
         const parallax2 = document.getElementById("parallax2");
         let offset = window.pageYOffset;
-        parallax2.style.backgroundPositionY = offset * -0.1 + "px";
+        parallax2.style.backgroundPositionY = offset * -0.2 + "px";
     });
 
     // Parallax Effect for DIV 1
