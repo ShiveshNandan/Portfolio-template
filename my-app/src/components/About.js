@@ -26,3 +26,6 @@ export default function About() {
         </>
     )
 }
+
+
+// i am trying to add the scroll in the website
