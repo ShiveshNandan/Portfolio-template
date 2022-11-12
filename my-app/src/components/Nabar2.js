@@ -2,31 +2,8 @@ import React from 'react';
 import "../CSS/Navbar.css";
 // import { HashScroll } from "react-hash-scroll";
 
-export default function Navbar() {
-    const [visible, setVisible] = React.useState(false)
-  
-    const toggleVisible = () => {
-      const scrolled = document.documentElement.scrollTop;
-      if (scrolled > 300){
-        setVisible(true)
-      } 
-      else if (scrolled <= 300){
-        setVisible(false)
-      }
-    };
-    
-    const scrollToTop = () =>{
-      window.scrollTo({
-        top: 1564, 
-        behavior: 'smooth'
-      });
-    };
-    window.addEventListener('scroll', toggleVisible);
-    const ref = React.useRef(null);
-
-//   const scrollToTop = () => {
-//     ref.current?.scrollIntoView({behavior: 'smooth'});
-//   };
+export default function Navbar2() {
+    const scollToRef = React.useRef();
 
     return (
         <>
@@ -34,7 +11,7 @@ export default function Navbar() {
                 <div className="name slide-in-blurred-top"><p className='slide-in-blurred-to'>SHIVESH NANDAN</p></div>
                 <div className="options slide-in-blurred-top">
                     <ul>
-                            <a onClick={scrollToTop}>
+                            <a onClick={() => scollToRef.current.scrollIntoView()}>
                             <li >Home</li>
                             </a>
                         <a href="">
