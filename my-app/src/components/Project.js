@@ -9,7 +9,6 @@ export default function Project() {
           <h2>Projects</h2>
           <div className="projectMains">
           <div className="project1">
-            
           </div>
           </div>
         </div>
