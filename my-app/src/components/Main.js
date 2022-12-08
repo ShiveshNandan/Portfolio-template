@@ -16,6 +16,7 @@ export default function Main() {
 
     // Parallax Effect for DIV 1
 
+   
     return (
         <>
             <section>

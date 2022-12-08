@@ -6,6 +6,7 @@
   html {
     scroll-behavior: smooth;
   }
+ 
   .parallax-item, .parallax-item3, .parallax-item4 {
     display: flex;
     align-items: center;

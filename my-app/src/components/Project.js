@@ -9,9 +9,26 @@ export default function Project() {
           <h2>Projects</h2>
           <div className="projectMains">
           <div className="project1">
+          <div class="contaienr">
+	<div class="tilt-box-wrap">
+		<span class="t_over"></span>
+		<span class="t_over"></span>
+		<span class="t_over"></span>
+		<span class="t_over"></span>
+		<span class="t_over"></span>
+		<span class="t_over"></span>
+		<span class="t_over"></span>
+		<span class="t_over"></span>
+		<span class="t_over"></span>
+		<div class="tilt-box">
+			<strong>Tilt Effect</strong>
+		</div>
+	</div>
+</div>
           </div>
           </div>
         </div>
-      </section></>
+      </section>
+    <script src="tilt.jquery.js"></script></>
   )
 }

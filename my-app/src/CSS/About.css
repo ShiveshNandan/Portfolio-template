@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .parallax-item2{
     display: flex;
     align-items: center;
@@ -19,7 +35,7 @@
   .about{
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 36vw;
     margin: 12vw 0vw 0vw 0vw;
   }
   .about h1{
