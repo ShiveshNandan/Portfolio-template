@@ -118,5 +118,8 @@
 .parallax_item2 {
   background: url("../Assets/new2.jpeg");
   background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: length; */
+  /* background-size: length; */
 }
 }

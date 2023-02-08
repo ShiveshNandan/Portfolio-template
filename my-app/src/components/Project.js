@@ -5,6 +5,11 @@ import "../CSS/project1.css"
 
 export default function Project() {
 
+  window.addEventListener("scroll", function () {
+    const parallax2 = document.getElementById("parallax2");
+    let offset = window.pageYOffset;
+    parallax2.style.backgroundPositionY = offset * -0.0001 + "px";
+});
   // document.querySelector(document)
   // .addEventListener("mousemove", ".card", function(event) {
   //   var halfWidth = (this.clientWidth / 2);
@@ -33,30 +38,30 @@ export default function Project() {
           <div className="projectMains">
             <div className="project1 proj1">
               <div className="hoveer">
-                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <p id='sum'>Official website of annual Technical fest of USICT,Delhi. Member of the website team.
                 <div className="btns">
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                <div className="btn"> <a href="https://infoxpression.tech/" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                {/* <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div> */}
                 </div>
                 </p>
               </div>
               </div>
             <div className="project1 proj2">
               <div className="hoveer">
-                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <p id='sum'>Lead of Official IPU main website maintenance team (beta version).
                 <div className="btns">
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                <div className="btn"> <a href="https://ipu.ac.in" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                {/* <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div> */}
                 </div></p>
                 
               </div>
               </div>
             <div className="project1 proj3">
               <div className="hoveer">
-                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <p id='sum'>Official SDC website.
                 <div className="btns">
                 <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                {/* <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div> */}
                 </div>
                 </p>
                 
@@ -64,27 +69,27 @@ export default function Project() {
               </div>
             <div className="project1 proj4">
               <div className="hoveer">
-                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <p id='sum'>Hotstar clone
                 <div className="btns">
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                <div className="btn"> <a href="https://shiveshnandan.github.io/Hotstar-clone/" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="https://github.com/ShiveshNandan/Hotstar-clone" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
                 </div>
                 </p>
               </div>
               </div>
             <div className="project1 proj5">
               <div className="hoveer">
-                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <p id='sum'>My own link tree. so people can easily connect with me.
                 <div className="btns">
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                <div className="btn"> <a href="https://shiveshnandan.github.io/LinkTree/" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="https://github.com/ShiveshNandan/LinkTree" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
                 </div>
                 </p>
               </div>
               </div>
             <div className="project1 proj6">
               <div className="hoveer">
-                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <p id='sum'>In voluptate molestias, vero enim asperiores autem.
                 <div className="btns">
                 <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
                 <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
@@ -92,8 +97,6 @@ export default function Project() {
                 </p>
               </div>
               </div>
-              
-
           </div>
         </div>
       </section>

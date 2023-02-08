@@ -21,6 +21,25 @@ export default function Navbar() {
             behavior: 'smooth'
         });
     };
+    const scrollToAbout = () => {
+        window.scrollTo({
+            // top: 680,
+            top: 820,
+            behavior: 'smooth'
+        });
+    };
+    const scrollToProject = () => {
+        window.scrollTo({
+            top: 1560,
+            behavior: 'smooth'
+        });
+    };
+    const scrollToPhoto = () => {
+        window.scrollTo({
+            top: 2820,
+            behavior: 'smooth'
+        });
+    };
     window.addEventListener('scroll', toggleVisible);
     const ref = React.useRef(null);
 
@@ -43,13 +62,13 @@ export default function Navbar() {
                         <a onClick={scrollToTop}>
                             <li >Home</li>
                         </a>
-                        <a href="">
-                            <li href="" >About</li>
+                        <a onClick={scrollToAbout}>
+                            <li>About</li>
                         </a>
-                        <a href="">
-                            <li href="" >Project</li>
+                        <a onClick={scrollToProject}>
+                            <li>Project</li>
                         </a>
-                        <a href="#Photography">
+                        <a onClick={scrollToPhoto}>
                             <li >Photography</li>
                         </a>
                     </ul>
@@ -79,16 +98,16 @@ export default function Navbar() {
                 <div className="name slide-in-blurred-top"><p className='slide-in-blurred-to'>SHIVESH NANDAN</p></div>
                 <div className="options slide-in-blurred-top">
                     <ul>
-                        <a onClick={scrollToTop}>
+                    <a onClick={scrollToTop}>
                             <li >Home</li>
                         </a>
-                        <a href="">
-                            <li href="" >About</li>
+                        <a onClick={scrollToAbout}>
+                            <li>About</li>
                         </a>
-                        <a href="">
-                            <li href="" >Project</li>
+                        <a onClick={scrollToProject}>
+                            <li>Project</li>
                         </a>
-                        <a href="#Photography">
+                        <a onClick={scrollToPhoto}>
                             <li >Photography</li>
                         </a>
                     </ul>
