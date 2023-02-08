@@ -28,67 +28,116 @@ export default function Project() {
   return (
     <>
       <section>
-        <div id="parallax2" className="parallax-item3">
+        <div id="parallax2" className="parallax-item3 projectOuterBox">
           <h2>Projects</h2>
           <div className="projectMains">
-            <div className="project1">
-
-              {/* <ParallaxCard
-                label='Label (optional)'
-                enableRotate
-                enableTransform
-                style={{ margin: '0 auto', width: 240, height: 240 }}>
-
-                <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
-                <div /><div /><div />
-                <img src="shivesh.png" alt="" srcset="" style={{ top: '67%', left: '75%' }} />
-                <img />
-
-                <p className='projectPara'>
-                  Shivesh.
-                </p>
-
-              </ParallaxCard> */}
-
-              {/* <ParallaxCard
-                label='Label (optional)'
-                enableRotate
-                style={{ margin: '0 auto', width: 240, height: 240 }}>
-                <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' width='240' role='presentation' />
-              </ParallaxCard> */}
-
-              {/* <div class="contaienr">
-                <div class="tilt-box-wrap">
-                  <span class="t_over"></span>
-                  <span class="t_over"></span>
-                  <span class="t_over"></span>
-                  <span class="t_over"></span>
-                  <span class="t_over"></span>
-                  <span class="t_over"></span>
-                  <span class="t_over"></span>
-                  <span class="t_over"></span>
-                  <span class="t_over"></span>
-                  <div class="tilt-box">
-                    <strong>Tilt Effect</strong>
-                  </div>
+            <div className="project1 proj1">
+              <div className="hoveer">
+                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <div className="btns">
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
                 </div>
-              </div> */}
-             <div className="card">
-    <div className="card__bg"></div>
-    <div className="card__overlay cover"></div>
-    <div className="card__info cover">
-      <h1 className="card__title">saïgon</h1>
-      <button className="card__cta">view<span className="icon">&rarr;</span></button>
-    </div>
-  </div>
+                </p>
+              </div>
+              </div>
+            <div className="project1 proj2">
+              <div className="hoveer">
+                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <div className="btns">
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                </div></p>
+                
+              </div>
+              </div>
+            <div className="project1 proj3">
+              <div className="hoveer">
+                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <div className="btns">
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                </div>
+                </p>
+                
+              </div>
+              </div>
+            <div className="project1 proj4">
+              <div className="hoveer">
+                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <div className="btns">
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                </div>
+                </p>
+              </div>
+              </div>
+            <div className="project1 proj5">
+              <div className="hoveer">
+                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <div className="btns">
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                </div>
+                </p>
+              </div>
+              </div>
+            <div className="project1 proj6">
+              <div className="hoveer">
+                <p id='sum'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptate molestias, vero enim asperiores autem.
+                <div className="btns">
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                </div>
+                </p>
+              </div>
+              </div>
+              
 
-
-
-            </div>
           </div>
         </div>
       </section>
     </>
   )
 }
+  {/* <ParallaxCard
+    label='Label (optional)'
+    enableRotate
+    enableTransform
+    style={{ margin: '0 auto', width: 240, height: 240 }}>
+
+    <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+
+    <div /><div /><div />
+    <img src="shivesh.png" alt="" srcset="" style={{ top: '67%', left: '75%' }} />
+    <img />
+
+    <p className='projectPara'>
+      Shivesh.
+    </p>
+
+  </ParallaxCard> */}
+
+  {/* <ParallaxCard
+    label='Label (optional)'
+    enableRotate
+    style={{ margin: '0 auto', width: 240, height: 240 }}>
+    <img src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' width='240' role='presentation' />
+  </ParallaxCard> */}
+
+  {/* <div class="contaienr">
+    <div class="tilt-box-wrap">
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <div class="tilt-box">
+        <strong>Tilt Effect</strong>
+      </div>
+    </div>
+  </div> */}

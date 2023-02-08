@@ -14,7 +14,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.parallax-item2{
+.parallax_item2{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@
     width: 100%;
     height: 100vh;
   } 
-.parallax-item2 {
+.parallax_item2 {
     background: #fdd835;
   }
   .mainabout{
@@ -39,7 +39,7 @@
     margin: 12vw 0vw 0vw 0vw;
   }
   .about h1{
-    font-size: 2vw;
+    font-size: 50px;
     margin: 1vw 1vw 1vw 1vw;
   }
   .about p{
@@ -61,9 +61,62 @@
     width: 20vw;
     border: 2px solid blue;
     border-radius: 1vw;
-    margin: 9.5vw 4vw 0vw -0.1vw;
+    margin: 6.5vw 4vw 0vw -0.1vw;
     background: url("../Assets/new2.jpeg");
-    background-position-y:2vh ;
-  background-repeat: no-repeat;
+    /* background-position-y:46px !important; */
+  /* background-repeat: no-repeat; */
   background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .photo{
+    height: 40vw;
+    width: 27vw;
+    margin: 25.5vw 2vw 0vw -3vw;
+}
+.pillar{
+  width: 2vh;
+  border-radius: 20vw;
+}  
+.about h1{
+  font-size: 50px;
+  margin: 10vw 1vw 1vw 1vw;
+}
+}
+@media screen and (max-width: 700px) {
+  .photo{
+    height: 40vw;
+    width: 35vw;
+    margin: 13.5vw 2vw 0vw -3vw;
+}.about p{
+  margin: 1vw 1vw 1vw 1vw;
+  font-size: 14px;
+}
+.pillar{
+  display: none;
+}  
+.about h1{
+  margin: -10vw 1vw 1vw 1vw;
+}
+}
+@media screen and (max-width: 550px) {
+  .photo{
+    display: none;
+}.about p{
+  margin: 1vw 1vw 1vw 1vw;
+  color: #f1f1f1;
+  font-size: 14px;
+}
+.mainabout{
+  /* margin: -10vw 1vw 1vw 1vw; */
+  width: 80vw;
+}
+.about {
+  width: 80vw;
+  color: #f1f1f1;
+}
+.parallax_item2 {
+  background: url("../Assets/new2.jpeg");
+  background-size: cover;
+}
 }

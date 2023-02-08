@@ -7,13 +7,19 @@ export default function About() {
         const photo = document.getElementById("photu");
         let offset = window.pageYOffset;
         // parallax.style.backgroundPositionY = `${offset * 0.5}px`;
-        photo.style.backgroundPositionY = offset * -0.13 + "px";
+        photo.style.backgroundPositionY = offset * -0.10 + "px";
+    });
+    window.addEventListener("scroll", function () {
+        const parallax_item2 = document.getElementById("bggg");
+        let offset = window.pageYOffset;
+        // parallax.style.backgroundPositionY = `${offset * 0.5}px`;
+        parallax_item2.style.backgroundPositionY = offset * -0.08 + "px";
     });
 
     return (
         <>
             <section >
-                <div className="parallax-item2">
+                <div id='bggg' className="parallax_item2">
                     <div className="mainabout">
                         <div className="about">
                             <h1>About</h1>
