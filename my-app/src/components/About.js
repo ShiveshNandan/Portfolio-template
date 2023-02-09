@@ -23,7 +23,7 @@ export default function About() {
                     <div className="mainabout">
                         <div className="about">
                             <h1>About</h1>
-                            <p>I am Shivesh Nandan, a second year Computer Science Engineering Student at USICT, GGSIP university Dwarka. I am learning about web development since last year and now building some projects like this portfolio using React.js framework. Currently i am learning more about the Web Development and looking for an internship or free lancing on web development. I love to do photograpy too. The images used in this website are captured by me XD.</p>
+                            <p>I am Shivesh Nandan, a second year CSE Student at USICT, GGSIPU Delhi. I am learning about web development since last year and now building some projects like this portfolio using React.js framework. Currently i am learning more about the Web Development and looking for an internship or free lancing on web development. I love to do photograpy too. The images used in this website are captured by me XD.</p>
                         </div>
                         <div className="pillar"></div>
                         <div id='photu' className="photo"></div>

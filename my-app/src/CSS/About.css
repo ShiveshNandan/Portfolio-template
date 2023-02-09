@@ -44,7 +44,8 @@
   }
   .about p{
     margin: 1vw 1vw 1vw 1vw;
-    
+    letter-spacing: 0.4px;
+    text-transform: none;
   }
 
 .pillar{
