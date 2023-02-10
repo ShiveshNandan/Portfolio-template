@@ -4,7 +4,6 @@ import "../CSS/project1.css"
 // import ParallaxCard from "react-parallax-card"
 
 export default function Project() {
-
   window.addEventListener("scroll", function () {
     const parallax2 = document.getElementById("parallax2");
     let offset = window.pageYOffset;

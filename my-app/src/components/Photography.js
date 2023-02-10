@@ -7,6 +7,7 @@ export default function Photography() {
     <div id='#Photography' className="parallax-item4">
     <h2>Photography</h2>
   </div>
+  
         </section></>
   )
 }

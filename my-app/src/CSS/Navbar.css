@@ -105,7 +105,7 @@
     }
 
     .navbar-container input[type="checkbox"]:checked~.menu-items {
-        transform: translateX(0);
+        transform: translateX(-24vw);
     }
 
     .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
@@ -118,6 +118,10 @@
 
     .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
         transform: rotate(-35deg);
+    }
+    .navbar-container{
+        width: 10vw;
+        /* z-index: -30 !important; */
     }
 }
 
@@ -137,6 +141,9 @@
         width: 120px !important;
         height: 40px !important;
         margin-top: -10px !important;
+    }
+    .navbar-container input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(-70vw);
     }
 }
 

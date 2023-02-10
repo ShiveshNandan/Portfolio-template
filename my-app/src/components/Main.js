@@ -8,7 +8,6 @@ export default function Main() {
         // parallax.style.backgroundPositionY = `${offset * 0.5}px`;
         parallax.style.backgroundPositionY = offset * 0.7 + "px";
     });
-
     // Parallax Effect for DIV 1
 
    

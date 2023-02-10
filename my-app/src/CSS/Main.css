@@ -6,7 +6,6 @@
   html {
     scroll-behavior: smooth;
   }
- 
   .parallax-item, .parallax-item3, .parallax-item4 {
     display: flex;
     align-items: center;
@@ -61,13 +60,11 @@
   
   .parallax-item3 {
     /* background: url("https://images.unsplash.com/photo-1663183539627-adbe2c8ef43d?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5Mzk5ODc&ixlib=rb-1.2.1&q=80"); */
-    background: url("../Assets/IMG20220715155127\ \(2\).jpg");
+    background:linear-gradient(rgba(0, 0, 0, 0.273), rgba(0, 0, 0, 0.212)), url("../Assets/IMG20220715155127\ \(2\).jpg");
     background-size: cover;
     background-attachment: fixed;
   /* background-position-y: 120vh; */
   background-repeat: no-repeat;
-  /* background-size: cover; */
-    /* height: 420vh; */
   }
   
   .parallax-item4 {

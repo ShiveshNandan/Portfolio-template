@@ -6,6 +6,7 @@
   margin: 2.5vw;
   margin-top: 7vw;
   font-size: 50px;
+  color: aliceblue;
 }
 .projectMains{
   display: flex;
@@ -55,7 +56,7 @@
 .btn a{
   padding:4px 15px;
   border-radius: 8px;
-  background: rgb(77, 255, 0);
+  background: rgb(0, 191, 255);
   text-decoration: none;
   color: black;
 }
@@ -74,7 +75,7 @@
   margin-top: -15vw;
 }
 .proj1{
-  background: black;
+  background: rgba(0, 0, 0, 0.47);
   background-image: url('../Assets/WhatsApp\ Image\ 2022-06-29\ at\ 10.20.08\ PM.jpeg');
   background-position-y: 2.5vw;
   background-position-x: center;
@@ -83,7 +84,7 @@
   margin-top: 0vw;
 }
 .proj2{
-  background: black;
+  background: rgba(0, 0, 0, 0.47);
   background-image: url('../Assets/logo_name_white.png');
   background-position-y: 2.5vw;
   background-position-x: center;
@@ -92,7 +93,7 @@
   margin-top: 3vw;
 }
 .proj3{
-  background: black;
+  background: rgba(0, 0, 0, 0.47);
   background-image: url('https://media-exp1.licdn.com/dms/image/C4D0BAQG9WF99rtHXbw/company-logo_200_200/0/1652591102908?e=2147483647&v=beta&t=Epir86jIPRXrvbhgPfXaYgMo6lujzCcfltBPX09HkAY');
   background-position-y: 2.5vw;
   background-position-x: center;
@@ -101,7 +102,7 @@
   margin-top: 2vw;
 }
 .proj4{
-  background: black;
+  background: rgba(0, 0, 0, 0.47);
   background-image: url('https://shiveshnandan.github.io/Hotstar-clone/images/logo.png');
   background-position-y: 2.5vw;
   background-position-x: center;
@@ -110,7 +111,7 @@
   margin-top: 2vw;
 }
 .proj5{
-  background: black;
+  background: rgba(0, 0, 0, 0.47);
   background-image: url('s-n-low-resolution-logo-white-on-transparent-background.png');
   background-position-y: 6.5vw;
   background-position-x: 3.5vw;
@@ -120,7 +121,7 @@
   margin-top: 2vw;
 }
 .proj6{
-  background: black;
+  background: rgba(0, 0, 0, 0.47);
   background-image: url('https://media-exp1.licdn.com/dms/image/C4D0BAQG9WF99rtHXbw/company-logo_200_200/0/1652591102908?e=2147483647&v=beta&t=Epir86jIPRXrvbhgPfXaYgMo6lujzCcfltBPX09HkAY');
   background-position-y: 2.5vw;
   background-position-x: center;
@@ -145,7 +146,7 @@
     width: 130%;
     height: 30vw;
     margin-left: -1vw;
-    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.656) 70%, rgba(0, 0, 0, 0.132) 100%);
+    background:none;
     border-radius: 20px;
   }
   .hoveer p{
@@ -173,8 +174,8 @@
   .btn a{
     padding:2px 8px;
     border-radius: 8px;
-    background: rgb(77, 255, 0);
-    color: black;
+    background: rgb(0, 191, 255);
+    color: rgb(0, 0, 0);
   }
   .btn img{
     height: 10px;
@@ -190,6 +191,15 @@
   .proj3{
     display: none;
   }
+  .proj4{
+    background-size: 25vw;
+   }
+   .proj5{
+     background-size: 25vw;
+   }
+   .proj6{
+     background-size: 20vw;
+   }
 }
 @media screen and (max-width:500px){
   .project1{
@@ -200,4 +210,13 @@
     overflow: hidden;
     border: 1px solid white;
   }
+  .proj4{
+    background-size: 30vw;
+   }
+   .proj5{
+     background-size: 30vw;
+   }
+   .proj6{
+     background-size: 20vw;
+   }
 }
