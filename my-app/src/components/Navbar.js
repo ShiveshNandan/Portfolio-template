@@ -78,7 +78,7 @@ export default function Navbar() {
                                 <img className='slide-in-blurred-right' src="https://img.icons8.com/fluency-systems-regular/48/null/instagram-new--v1.png" alt='' />
                             </a>
                             </div>
-                            <div className="ico2"><a href="https://instagram.com" target="_blank">
+                            <div className="ico2"><a href="mailto:kshivesh929@gmail.com" target="_blank">
                                 <img className='slide-in-blurred-right' src="https://img.icons8.com/glyph-neue/64/null/gmail.png" alt='' />
                             </a>
                             </div>
@@ -119,7 +119,7 @@ export default function Navbar() {
                         <img className='slide-in-blurred-right' src="https://img.icons8.com/fluency-systems-regular/48/null/instagram-new--v1.png" alt='' />
                     </a>
                     </div>
-                    <div className="ico2"><a href="https://instagram.com" target="_blank">
+                    <div className="ico2"><a href="mailto:kshivesh929@gmail.com" target="_blank">
                         <img className='slide-in-blurred-right' src="https://img.icons8.com/glyph-neue/64/null/gmail.png" alt='' />
                     </a>
                     </div>
