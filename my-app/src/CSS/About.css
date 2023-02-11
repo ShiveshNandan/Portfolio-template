@@ -63,7 +63,7 @@
     border: 2px solid blue;
     border-radius: 1vw;
     margin: 6.5vw 4vw 0vw -0.1vw;
-    background: url("../Assets/-6057585736879812765_121.jpg");
+    background: url("../Assets/45.png");
     /* background-position-y:46px !important; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,7 +121,7 @@
   color: #000;
 }
 .parallax_item2 {
-  background: url("../Assets/-6057585736879812765_121.jpg");
+  background: url("../Assets/45.png");
   background-size: cover;
   /* filter: blur(2px); */
   /* background-repeat: no-repeat; */

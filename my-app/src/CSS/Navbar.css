@@ -30,7 +30,7 @@
     letter-spacing: 3px;
     font-size: 23px;
     color: aliceblue;
-    z-index: 4 !important;
+    z-index: 14 !important;
     background-color: rgba(5, 5, 5, 0.466);
     animation: slide-in-blurred-top 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
@@ -38,7 +38,7 @@
 .name p {
     margin: 0px 0px 0px 0px;
     animation-delay: 2s;
-    z-index: 4 !important;
+    z-index: 14 !important;
     animation: slide-in-blurred-to 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
@@ -162,7 +162,7 @@
         display: flex;
         justify-content: space-between;
         position: fixed;
-        z-index: 2;
+        z-index: 12;
         width: 60vw !important;
         background: none;
     }
@@ -171,7 +171,7 @@
         position: fixed;
         /* width: 50vw; */
         right: 0;
-        z-index: 1;
+        z-index: 12;
     }
 
     .navbar-container input[type="checkbox"],
