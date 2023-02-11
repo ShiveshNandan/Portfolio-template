@@ -68,7 +68,7 @@
 .project1:hover, .hoveer p:hover,.hoveer:hover{
   opacity: 1;
   transition: all 0.4s ease-out;
-  box-shadow: 0px 0px 44px 3px black;
+  /* box-shadow: 0px 0px 44px 3px black; */
 }
 
 .hoveer p:hover{
@@ -201,6 +201,9 @@
    .proj6{
      background-size: 20vw;
    }
+   .hoveer p:hover{
+    margin-top: -5vw;
+  }
 }
 @media screen and (max-width:500px){
   .project1{

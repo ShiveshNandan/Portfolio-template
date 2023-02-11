@@ -63,9 +63,9 @@
     border: 2px solid blue;
     border-radius: 1vw;
     margin: 6.5vw 4vw 0vw -0.1vw;
-    background: url("../Assets/new2.jpeg");
+    background: url("../Assets/-6057585736879812765_121.jpg");
     /* background-position-y:46px !important; */
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -105,8 +105,11 @@
     display: none;
 }.about p{
   margin: 1vw 1vw 1vw 1vw;
-  color: #f1f1f1;
+  color: #ffffff;
   font-size: 14px;
+  padding: 3vw 2vw ;
+  border-radius: 14px;
+  background: #000000b0;
 }
 .mainabout{
   /* margin: -10vw 1vw 1vw 1vw; */
@@ -114,11 +117,13 @@
 }
 .about {
   width: 80vw;
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
+  color: #000;
 }
 .parallax_item2 {
-  background: url("../Assets/new2.jpeg");
+  background: url("../Assets/-6057585736879812765_121.jpg");
   background-size: cover;
+  /* filter: blur(2px); */
   /* background-repeat: no-repeat; */
   /* background-size: length; */
   /* background-size: length; */

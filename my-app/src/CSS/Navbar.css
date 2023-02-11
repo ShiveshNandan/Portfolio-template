@@ -11,8 +11,9 @@
     position: fixed;
     z-index: 2;
     width: 100vw;
-    background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.495),rgba(0, 0, 0, 0.012));
-    background: linear-gradient(rgb(0, 0, 0) 0%,rgba(0, 0, 0, 0.829) 40%, rgba(0, 0, 0, 0.012) 90%);
+    /* background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.827),rgba(0, 0, 0, 0.495),rgba(0, 0, 0, 0.012)); */
+    /* background: linear-gradient(rgb(0, 0, 0) 0%,rgba(0, 0, 0, 0.829) 40%, rgba(0, 0, 0, 0.012) 90%); */
+    background: linear-gradient(rgb(0, 0, 0) ,rgba(0, 0, 0, 0.829) 00%, rgba(0, 0, 0, 0.012) 100%);
 }
 .options{
     margin-right: 100px !important;
@@ -163,6 +164,7 @@
         position: fixed;
         z-index: 2;
         width: 60vw !important;
+        background: none;
     }
     .navbarphone {
         display: flex;
