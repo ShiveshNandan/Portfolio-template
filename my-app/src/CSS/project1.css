@@ -76,7 +76,7 @@
 }
 .proj1{
   background: rgba(0, 0, 0, 0.47);
-  background-image: url('../Assets/WhatsApp\ Image\ 2022-06-29\ at\ 10.20.08\ PM.jpeg');
+  background-image: url('image.png');
   background-position-y: 2.5vw;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -196,7 +196,7 @@
     background-size: 25vw;
    }
    .proj5{
-     background-size: 25vw;
+     background-size: 20vw;
    }
    .proj6{
      background-size: 20vw;
@@ -218,7 +218,7 @@
     background-size: 30vw;
    }
    .proj5{
-     background-size: 30vw;
+     background-size: 20vw;
    }
    .proj6{
      background-size: 20vw;
