@@ -88,10 +88,10 @@ export default function Project() {
               </div>
             <div className="project1 proj6">
               <div className="hoveer">
-                <p id='sum'>In voluptate molestias, vero enim asperiores autem.
+                <p id='sum'>resturant website
                 <div className="btns">
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
-                <div className="btn"> <a href="http://google.com" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                <div className="btn"> <a href="https://shiveshnandan.github.io/resturant_website/" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="https://github.com/ShiveshNandan/resturant_website" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
                 </div>
                 </p>
               </div>
