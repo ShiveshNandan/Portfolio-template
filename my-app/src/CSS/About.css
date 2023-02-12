@@ -43,6 +43,7 @@
   .about h1{
     font-size: 50px;
     margin: 1vw 1vw 1vw 1vw;
+    letter-spacing: 1.8px;
   }
   .about p{
     margin: 1vw 1vw 1vw 1vw;
@@ -114,6 +115,7 @@
   color: #ffffff;
   font-size: 14px;
   padding: 3vw 2vw ;
+  letter-spacing: 1px;
   border-radius: 14px;
   line-height: 20px;
   background: #000000e4;

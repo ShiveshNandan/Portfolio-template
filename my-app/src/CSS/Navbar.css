@@ -229,7 +229,7 @@
 
     .navbarphone .menu-items {
         padding-top: 100px;
-        background: #7e7d7dd3;
+        background: #393939f6;
         height: 100vh;
         width: 40vw;
         transform: translate(250%);
@@ -238,6 +238,8 @@
         margin-left: -40px;
         padding-left: 50px;
         transition: transform 0.5s ease-in-out;
+        color: #ffffff;
+        letter-spacing: 2px;
     }
 
     .navbarphone .menu-items li {
