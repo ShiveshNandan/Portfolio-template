@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=League+Spartan:wght@200&family=Ubuntu:wght@300&display=swap');
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -46,6 +48,10 @@
     margin: 1vw 1vw 1vw 1vw;
     letter-spacing: 0.4px;
     text-transform: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
   }
 
 .pillar{
@@ -109,7 +115,7 @@
   font-size: 14px;
   padding: 3vw 2vw ;
   border-radius: 14px;
-  background: #000000b0;
+  background: #000000e4;
 }
 .mainabout{
   /* margin: -10vw 1vw 1vw 1vw; */

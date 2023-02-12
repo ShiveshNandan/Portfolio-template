@@ -24,13 +24,13 @@ export default function Navbar() {
     const scrollToAbout = () => {
         window.scrollTo({
             // top: 680,
-            top: 720,
+            top: 820,
             behavior: 'smooth'
         });
     };
     const scrollToProject = () => {
         window.scrollTo({
-            top: 1360,
+            top: 1560,
             behavior: 'smooth'
         });
     };
