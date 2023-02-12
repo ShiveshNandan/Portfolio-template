@@ -3,25 +3,27 @@ import "../CSS/Navbar.css";
 // import { HashScroll } from "react-hash-scroll";
 
 export default function Navbar() {
-    const [visible, setVisible] = React.useState(false)
-
-    const toggleVisible = () => {
+    const [visible, setVisible] = React.useState(false);
+    const [checked, setChecked] = React.useState(false);
+    function toggleVisible() {
         const scrolled = document.documentElement.scrollTop;
         if (scrolled > 300) {
-            setVisible(true)
+            setVisible(true);
         }
         else if (scrolled <= 300) {
-            setVisible(false)
+            setVisible(false);
         }
-    };
+    }
 
     const scrollToTop = () => {
+        setChecked(false);
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     };
     const scrollToAbout = () => {
+        setChecked(false);
         window.scrollTo({
             // top: 680,
             top: 820,
@@ -29,12 +31,14 @@ export default function Navbar() {
         });
     };
     const scrollToProject = () => {
+        setChecked(false);
         window.scrollTo({
             top: 1560,
             behavior: 'smooth'
         });
     };
     const scrollToPhoto = () => {
+        setChecked(false);
         window.scrollTo({
             top: 2820,
             behavior: 'smooth'
@@ -46,20 +50,25 @@ export default function Navbar() {
     //   const scrollToTop = () => {
     //     ref.current?.scrollIntoView({behavior: 'smooth'});
     //   };
+    
+
+    const handleClick = () => {
+      setChecked(!checked);
+    };
 
     return (
         <>
 
             <nav className="navbarphone">
                 <div className="navbar-container container">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" name="" id="" checked={checked} onClick={handleClick}/>
                     <div className="hamburger-lines">
                         <span className="line line1"></span>
                         <span className="line line2"></span>
                         <span className="line line3"></span>
                     </div>
                     <ul className="menu-items">
-                        <a onClick={scrollToTop}>
+                        <a onClick={scrollToTop} >
                             <li >Home</li>
                         </a>
                         <a onClick={scrollToAbout}>
