@@ -72,8 +72,8 @@ export default function Project() {
               <div className="hoveer">
                 <p id='sum'>resturant website
                 <div className="btns">
-                <div className="btn"> <a href="https://shiveshnandan.github.io/resturant_website/" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
-                <div className="btn"> <a href="https://github.com/ShiveshNandan/resturant_website" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
+                <div className="btn"> <a href="https://shiveshnandan.github.io/Resturant_website/" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/source-code.png" />Link</a></div>
+                <div className="btn"> <a href="https://github.com/ShiveshNandan/Resturant_website" target="_blank" ><img src="https://img.icons8.com/material-rounded/24/null/link--v1.png"/>Code</a></div>
                 </div>
                 </p>
               </div>
