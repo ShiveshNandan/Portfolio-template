@@ -5,7 +5,7 @@ import About from "./about";
 import { TypeAnimation } from "react-type-animation";
 import Modal from "./UI Componemts/Modal";
 
-const home = () => {
+const Home = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => setModalOpen(true);
@@ -24,7 +24,7 @@ const home = () => {
         ></Image>
         <div className="">
           <h1 className="text-3xl font-[700] ">Shivesh Nandan</h1>
-          {/* <p className='mt-1'>
+          <p className='mt-1'>
               <TypeAnimation
                 sequence={[
                   "Software engineering student",
@@ -37,8 +37,8 @@ const home = () => {
                 deletionSpeed={85}
                 repeat={Infinity}
               />
-            </p> */}
-          <p>hello ! </p>
+            </p>
+          {/* <p>hello ! </p> */}
         </div>
         <h1 className=" py-3 text-sm text-gray-300 ">
           Trying to build a faster web application. Learning about web development, React / Next.js and data structure and algorithm.
@@ -82,4 +82,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;
