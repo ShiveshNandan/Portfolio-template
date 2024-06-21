@@ -75,11 +75,14 @@ const Card: React.FC<CardInterface> = ({Img,Heading,Description,link,techUse}) =
       onTouchCancel={handleMouseOut}
     >
       <div className='rounded-xl w-11/12 m-auto h-40 border '>
-     <Image height={100} width={100} src={'/ggsipu.png'} alt=''/> 
-     {/* <Image height={100} width={100} src={Img} alt=''/>  */}
+     {/* <Image height={100} width={100} src={'/ggsipu.png'} alt=''/>  */}
+     <Image height={100} width={100} src={Img} alt=''/> 
       </div>
       <h1 className='py-1'>{Heading}</h1>
       <p className='py-1'>{Description}</p>
+      <p className='py-1'>{link}</p>
+      <p className='py-1'>{techUse}</p>
+
         
       <div className="flex justify-between px-4">
         <div className="flex">

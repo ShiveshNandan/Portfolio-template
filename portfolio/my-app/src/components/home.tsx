@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import About from "./about";
 import { TypeAnimation } from "react-type-animation";
 import Modal from "./UI Componemts/Modal";
@@ -25,9 +25,21 @@ const skills = ['JavaScript',
 
 const Home = () => {
   const [isModalOpen, setModalOpen] = useState(false);
-
+const [Start, setStart] = useState(false)
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setStart(true);
+    }, 5000);
+
+    // Cleanup the timer if the component is unmounted before the timeout
+    return () => clearTimeout(timer);
+  
+    
+  }, [])
+  
   return (
     <div className="px-8 ">
 
@@ -98,7 +110,9 @@ const Home = () => {
         <div className="my-2 rounded-xl bg">
           {/* <ProjectCard Heading={"g"} ></ProjectCard> */}
           {/* <Canvas /> */}
-          <Card Heading={""} Description={""} link={""} Img={""} techUse={""} ></Card>
+          {!Start ? "lood" : 
+          <Card Heading={"Make engineering Easy"} Description={"lorem20"} link={"gdgg"} Img={"/ggsipu.png"} techUse={"ddd"} ></Card>
+        }
         </div>
         </div>
 
