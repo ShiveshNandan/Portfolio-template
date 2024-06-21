@@ -74,3 +74,21 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .backdrop-blur1 {
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+  }
+  .backdrop-blur3 {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+  .backdrop-blur7 {
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+  }
+
+ 
+
+
+/*  */

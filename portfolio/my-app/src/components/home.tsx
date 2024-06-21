@@ -7,9 +7,7 @@ import Modal from "./UI Componemts/Modal";
 import { Button } from "./ui/button";
 import { Link, Mail , Linkedin, ArrowUpRightFromSquare, Twitter, SquareArrowOutUpRightIcon } from "lucide-react";
 import { Badge } from "./ui/badge";
-import LinkBtn from "./UI Componemts/LinkBtn";
-// import Btn from "./UI Componemts/Buttn";
-
+import Card from "./UI Componemts/ProjectCard";
 
 const skills = ['JavaScript',
   'TypeScript',
@@ -34,13 +32,13 @@ const Home = () => {
     <div className="px-8 ">
 
       {/* =========================== Intro ============================= */}
-      <div className="flex flex-col pt-[11vh] mb-14">
+      <div className="flex flex-col pt-[12vh] mb-14">
         <Image
-          src={"/"}
+          src={"/photo.jpg"}
           height={100}
           width={100}
           alt={"f"}
-          className="border rounded-full w-[90px] mb-8"
+          className="border rounded-full w-[90px] mb-8 border-white"
         ></Image>
         <div className="">
           <h1 className="text-3xl font-[700] ">Shivesh Nandan</h1>
@@ -95,8 +93,16 @@ const Home = () => {
       </div>
 
       {/* =============================== projects ============================ */}
-      <div className="flex">Projects</div>
-      <Button variant={"outline"} >Project<SquareArrowOutUpRightIcon className="w-4 h-4 mx-2"></SquareArrowOutUpRightIcon></Button>      
+      <div className="flex flex-col mt-10">
+        <h1 className="text-2xl underline decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">Projects</h1>
+        <div className="my-2 rounded-xl bg">
+          {/* <ProjectCard Heading={"g"} ></ProjectCard> */}
+          {/* <Canvas /> */}
+          <Card Heading={""} Description={""} link={""} Img={""} techUse={""} ></Card>
+        </div>
+        </div>
+
+      {/* <Button variant={"outline"} >Project<SquareArrowOutUpRightIcon className="w-4 h-4 mx-2"></SquareArrowOutUpRightIcon></Button>       */}
     
 
       {/* ====================== Experience ================================= */}
