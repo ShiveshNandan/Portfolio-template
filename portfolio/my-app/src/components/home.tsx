@@ -88,7 +88,7 @@ const Home = () => {
         <h1 className="text-2xl underline decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">Skills</h1>
         <div className="my-4">
         {skills.map((skill, index) => (
-        <Badge variant="outline" className="my-1 mx-1 text-[14px]">{skill}</Badge>
+        <Badge variant="outline" key={index} className="my-1 mx-1 text-[14px]">{skill}</Badge>
       ))}
 
         </div>
