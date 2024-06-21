@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
+import Change from "./change"
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -18,7 +19,7 @@ import { Command, List, SunIcon } from "lucide-react";
 const navbar = () => {
   return (
     <>
-      <div className="w-full fixed ">
+      <div className="w-full fixed top-0 z-10">
         <div className="flex backdrop-blur7 w-full m-auto xl:w-6/12 rounded-b-xl justify-between px-6 ">
           <div className="flex align-center ">
             {/* <Image src={'/close.png'} width={200} height={100} alt='' className={`flex self-center invert-[0.8] w-6 h-6 mt-5 hidden`} ></Image>
@@ -36,7 +37,7 @@ const navbar = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent className="pt-12 sm:w-[40vw] ">
-                
+                 
               </SheetContent>
             </Sheet>
 
@@ -47,7 +48,7 @@ const navbar = () => {
               <Command className="w-full"/>
             </div>
             <div className="flex justify-center flex-col w-10 h-10 overflow-hidden rounded-xl bg-[#333] mx-2">
-              <SunIcon className="w-full"></SunIcon>
+              <Change/>
             </div>
           </div>
         </div>
