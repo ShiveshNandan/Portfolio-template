@@ -4,6 +4,26 @@ import React, { useState } from "react";
 import About from "./about";
 import { TypeAnimation } from "react-type-animation";
 import Modal from "./UI Componemts/Modal";
+import { Button } from "./ui/button";
+import { Link, Mail , Linkedin, ArrowUpRightFromSquare, Twitter } from "lucide-react";
+import { Badge } from "./ui/badge";
+import LinkBtn from "./UI Componemts/LinkBtn";
+// import Btn from "./UI Componemts/Buttn";
+
+
+const skills = ['JavaScript',
+  'TypeScript',
+  'HTML',
+  'CSS',
+  'React',
+  'NodeJS',
+  'MongoDB',
+  'Git',
+  'C++',
+  'Python',
+  'Java',
+  'MySQL',
+  'PostgreSQL']
 
 const Home = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -11,7 +31,7 @@ const Home = () => {
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
   return (
-    <div className="px-8">
+    <div className="px-8 ">
 
       {/* =========================== Intro ============================= */}
       <div className="flex flex-col pt-[11vh] mb-14">
@@ -49,15 +69,13 @@ const Home = () => {
       {/* ========================= About me ========================= */}
 
       <div className="transition-all duration-1000 flex flex-col">
-        <h1 className="text-2xl underline decoration-sky-500 underline-offset-4 tracking-wide antialiased ">About Me</h1>
+        <h1 className="text-2xl underline decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">About Me</h1>
         <p className="line-clamp-4 my-3">I am Shivesh Nandan, a second year CSE Student at USICT, GGSIPU Delhi. I am learning about web development since last year and now building some projects like this portfolio using React.js framework. Currently i am learning more about the Web Development and looking for an internship or free lancing on web development. I love to do photograpy too. The images used in this website are captured by me XD.</p>
+        <div className="flex antialiased justify-end text-sky-500 relative font-bold">
+        <Button onClick={openModal} variant={"outline"} className="text-sky-500 font-bold w-fit">  Read More <ArrowUpRightFromSquare className="mx-2 h-4 w-4" /></Button>
+        </div>
 
-        <button
-          onClick={openModal}
-          className="flex antialiased justify-end text-sky-500 relative font-bold "
-        >
-          Read More
-        </button>
+        
         {isModalOpen && (
           <Modal Heading="About Me" onClose={closeModal}>
             <About />
@@ -65,16 +83,20 @@ const Home = () => {
         )}
       </div>
 
-      {/* =======================Education============================ */}
-
-      <div>College</div>
-      <div>School</div>
-
       {/* =========================== skills ============================= */}
-      <div className="flex">Skills</div>
+      <div className="flex flex-col mt-10">
+        <h1 className="text-2xl underline decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">Skills</h1>
+        <div className="my-4">
+        {skills.map((skill, index) => (
+        <Badge variant="outline" className="my-1 mx-1 text-[14px]">{skill}</Badge>
+      ))}
+
+        </div>
+      </div>
 
       {/* =============================== projects ============================ */}
       <div className="flex">Projects</div>
+      <LinkBtn Title={"hello"} type={"outline"}></LinkBtn>
 
       {/* ====================== Experience ================================= */}
       <div className="flex">Experience</div>
