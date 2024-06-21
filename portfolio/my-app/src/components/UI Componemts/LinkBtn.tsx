@@ -12,7 +12,6 @@ interface ModalInterface {
 const LinkBtn: React.FC<ModalInterface> = ({Title , type}) => {
   return (
     <>    
-    <Button variant={`"${type}"`} >{Title}<SquareArrowOutUpRightIcon className="w-4 h-4 mx-2"></SquareArrowOutUpRightIcon></Button>      
     </>
   );
 };

@@ -5,7 +5,7 @@ import About from "./about";
 import { TypeAnimation } from "react-type-animation";
 import Modal from "./UI Componemts/Modal";
 import { Button } from "./ui/button";
-import { Link, Mail , Linkedin, ArrowUpRightFromSquare, Twitter } from "lucide-react";
+import { Link, Mail , Linkedin, ArrowUpRightFromSquare, Twitter, SquareArrowOutUpRightIcon } from "lucide-react";
 import { Badge } from "./ui/badge";
 import LinkBtn from "./UI Componemts/LinkBtn";
 // import Btn from "./UI Componemts/Buttn";
@@ -96,7 +96,8 @@ const Home = () => {
 
       {/* =============================== projects ============================ */}
       <div className="flex">Projects</div>
-      <LinkBtn Title={"hello"} type={"outline"}></LinkBtn>
+      <Button variant={"outline"} >Project<SquareArrowOutUpRightIcon className="w-4 h-4 mx-2"></SquareArrowOutUpRightIcon></Button>      
+    
 
       {/* ====================== Experience ================================= */}
       <div className="flex">Experience</div>
