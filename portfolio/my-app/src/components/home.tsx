@@ -64,7 +64,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="px-8">
+    <div className="px-8 overflow-hidden">
       {/* =========================== Intro ============================= */}
       <div className="flex flex-col pt-[10vh] mt-10 mb-14">
         <Image
@@ -106,13 +106,13 @@ const Home = () => {
           About Me
         </h1>
         <p data-aos="fade-left" className="line-clamp- my-3 tracking-[0.3px] ">
-          Hello! I'm final-year CSE student at USICT, GGSIPU Delhi. Over the
-          past year, I've immersed myself in web development, creating projects
+          Hello! I`&apos;`m final-year CSE student at USICT, GGSIPU Delhi. Over the
+          past year, I`&apos;`ve immersed myself in web development, creating projects
           with frameworks like React.js and now focusing on Next.js. This
           portfolio showcases my work using Next.js, Tailwind CSS, and ShadCN to
-          build dynamic, responsive applications. I'm eager to find internships
+          build dynamic, responsive applications. I`&apos;`m eager to find internships
           or freelance opportunities to expand my skills further. Besides
-          coding, I enjoy photography. Let's connect and create something
+          coding, I enjoy photography. Let`&apos;`s connect and create something
           amazing together!
         </p>
         <div data-aos="fade-left" className="flex antialiased justify-end text-sky-600 dark:text-sky-500 relative font-bold">
@@ -190,7 +190,7 @@ const Home = () => {
             {!Start
               ? "loading ! "
               : expData.map((exp, index) => (
-                  <div>
+                  <div key={index}>
                     <ExpCard
                       img={exp.img}
                       companyName={exp.companyName}
