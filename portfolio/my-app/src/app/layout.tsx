@@ -28,7 +28,7 @@ export default function RootLayout({
       //  className={roboto.className}
       //  className={Mot.className}
       //  className={ubuntu.className}
-       className={rale.className}
+       className={`${rale.className}  `}
       //  className={nota.className}
        > 
         <ThemeProvider

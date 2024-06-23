@@ -4,28 +4,28 @@ import React from "react";
 
 const about = () => {
   return (
-    <div className="flex flex-col relative mx-auto p-4 text-justify indent-0.5">
-      <h1 className="my-1 px-2 mb-3">
-        Hello! I`&apos;`m Shivesh Nandan a Computer Science from India and Engineering
+    <div className="flex flex-col relative mx-auto py-4 px-2 text-justify indent-0.5 text-sm">
+      <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" className="my-1 px-2 mb-3">
+        Hello! I&apos;m Shivesh Nandan a Computer Science from India and Engineering
         student at USICT College, currently honing my skills in web development.
         Over the years, I have dabbled in various frameworks, starting with
         ReactJS and gradually transitioning to Next.js. Now, Next.js is my go-to
         framework for building efficient and scalable web applications.
       </h1>
-      <h1 className="my-1 px-2 mb-3">
+      <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250" className="my-1 px-2 mb-3">
         My journey into web development has been both challenging and rewarding.
-        I`&apos;`ve enjoyed experimenting with different libraries and tools to enhance
+        I&apos;ve enjoyed experimenting with different libraries and tools to enhance
         my projects. From the sleek and modern designs of Tailwind CSS to the
         comprehensive components of Bootstrap, each tool has taught me something
-        new. Lately, I`&apos;`ve been exploring ShadCN, and it`&apos;`s been a fantastic
+        new. Lately, I&apos;ve been exploring ShadCN, and it&apos;s been a fantastic
         addition to my toolkit, allowing me to create more refined and dynamic
         user interfaces.
       </h1>
-      <h1 className="my-1 px-2 mb-3">
-        In this portfolio, you`&apos;`ll find a showcase of my latest work, where I`&apos;`ve
+      <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="350" className="my-1 px-2 mb-3">
+        In this portfolio, you&apos;ll find a showcase of my latest work, where I&apos;ve
         utilized Next.js, Tailwind CSS, and ShadCN to build responsive and
         visually appealing applications. My projects reflect my passion for
-        clean code, intuitive design, and seamless user experiences. I`&apos;`m
+        clean code, intuitive design, and seamless user experiences. I&apos;m
         constantly learning and evolving, aiming to become a skilled Software
         Development Engineer (SDE) in the near future.
       </h1>
