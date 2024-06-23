@@ -64,6 +64,18 @@ const Home = () => {
     });
   }, []);
 
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+
+    return () => {
+      document.body.classList.remove('modal-open');
+    };
+  }, [isModalOpen]);
+
   return (
     
     <div className="px-8 overflow-hidden lg:w-6/12 lg:m-auto">
