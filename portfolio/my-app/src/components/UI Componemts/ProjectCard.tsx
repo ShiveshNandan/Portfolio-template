@@ -66,7 +66,7 @@ const Card: React.FC<CardInterface> = ({Img,Heading,Description,link,techUse}) =
   return (
     <>
     <div
-      className={`card bg-[#acacac] rounded-xl m-auto md:w-5/12 transition-all duration-500 py-3`}
+      className={`card bg-[#d8d8d8] dark:bg-[#262627] rounded-xl m-auto md:w-5/12 transition-all duration-500 py-3 my-5 shadow-xl`}
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseOut={handleMouseOut}
@@ -74,17 +74,18 @@ const Card: React.FC<CardInterface> = ({Img,Heading,Description,link,techUse}) =
       onTouchEnd={handleMouseOut}
       onTouchCancel={handleMouseOut}
     >
-      <div className='rounded-xl w-11/12 m-auto h-40 border '>
+      <div className='rounded-xl w-11/12 m-auto h-40 border  overflow-hidden '>
      {/* <Image height={100} width={100} src={'/ggsipu.png'} alt=''/>  */}
-     <Image height={100} width={100} src={Img} alt=''/> 
+     <Image height={100} width={100} src={Img} alt='' className='bg-white w-full'/> 
       </div>
-      <h1 className='py-1'>{Heading}</h1>
-      <p className='py-1'>{Description}</p>
-      <p className='py-1'>{link}</p>
-      <p className='py-1'>{techUse}</p>
-
+      <div className='px-4 py-2'>
+      <h1 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{Heading}</h1>
+      <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>{Description}</p>
+      {/* <p className='py-1'>{link}</p> */}
+      {/* <p className='py-1'>{techUse}</p> */}
+      </div>
         
-      <div className="flex justify-between px-4">
+      <div className="flex justify-between px-2">
         <div className="flex">
           <NotebookTextIcon className='w-4 h-4'></NotebookTextIcon>
         </div>

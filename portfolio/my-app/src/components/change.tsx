@@ -4,13 +4,6 @@ import * as React from "react"
 import { Moon, MoonIcon, Sun, SunIcon } from "lucide-react"
 import { useTheme } from "next-themes"
 
-import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 
 const ModeToggle = () => {
 
@@ -19,11 +12,6 @@ const ModeToggle = () => {
 
   
   const ChangeTheme =() =>{
-    // if (theme === 'dark') {
-    //     setTheme('light')        
-    // }else{
-    //     setTheme('dark') 
-    // }
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 

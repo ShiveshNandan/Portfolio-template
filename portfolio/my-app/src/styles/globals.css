@@ -4,7 +4,7 @@
 
   @layer base {
     :root {
-      --background: #1b1b1c;
+      --background: 0 0% 96%;
       --foreground: 222.2 84% 4.9%;
 
       --card: 0 0% 100%;
@@ -86,6 +86,10 @@
   .backdrop-blur7 {
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
+  }
+  .backdrop-blur17 {
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
   }
 
  

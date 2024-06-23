@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat, Raleway, Roboto, Noto_Sans, Ubuntu } from "next/font/google";
 import "../styles/globals.css";
 import { ThemeProvider } from "@/components/themeContext";
 // import { useState } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"] , weight:["100" , "300" , "400" , "500" , "700" , "900"]})
+const mot = Montserrat({ subsets: ["latin"] , weight:["100" , "300" , "400" , "500" , "700" , "900"]})
+const nota = Noto_Sans({ subsets: ["latin"] , weight:["100" , "300" , "400" , "500" , "700" , "900"]})
+const rale = Raleway({ subsets: ["latin"] , weight:["100" , "300" , "400" , "500" , "700" , "900"]})
+const ubuntu = Ubuntu({ subsets: ["latin"] , weight:[ "300" , "400" , "500" , "700" ]})
 
 export const metadata: Metadata = {
   title: "Portfolio - Shivesh Nandan",
@@ -20,7 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark`}>
-      <body>
+      <body
+      //  className={roboto.className}
+      //  className={Mot.className}
+      //  className={ubuntu.className}
+       className={rale.className}
+      //  className={nota.className}
+       > 
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
