@@ -66,9 +66,11 @@ const Home = () => {
 
   return (
     
-    <div className="px-8 overflow-hidden">
+    <div className="px-8 overflow-hidden lg:w-6/12 lg:m-auto">
       {!Start ? "" :
        ( <>
+
+       {/* ============================== Introduction ============================ */}
       <div className="flex flex-col pt-[10vh] mt-10 mb-14">
         <Image
           data-aos="fade-down"
@@ -103,6 +105,8 @@ const Home = () => {
 
 
 
+
+       {/* ============================== About me ============================ */}
 
 
 
@@ -142,6 +146,8 @@ const Home = () => {
 
 
 
+       {/* ============================== Skills ============================ */}
+
 
 
 
@@ -172,7 +178,7 @@ const Home = () => {
 
 
 
-
+       {/* ============================== Projects ============================ */}
 
 
 
@@ -196,6 +202,8 @@ const Home = () => {
       </div>
 
 
+
+       {/* ============================== Experience ============================ */}
 
 
 
@@ -221,6 +229,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+
+       {/* ============================== Contact me ============================ */}
+
+
 
       <div className="flex flex-col mt-8">
         <h1 data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="text-2xl underline decoration-sky-500 dark:decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">
@@ -249,8 +263,13 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      
+       {/* ============================== Footer ============================ */}
+
+
       <div className="text-sm border-t-2 pt-4 mt-8 text-center">
-        <h1 className="text-left">
+        <h1 className="text-left sm:text-center">
           Powered by <Link href={"https://nextjs.org"}><span className="text-sky-600 dark:text-sky-500">Next.js</span></Link> and <Link href={"https://tailwindcss.com"}><span className="text-sky-600 dark:text-sky-500">TailwindCSS</span></Link>. Hosted on <Link href={"https://vercel.com"}><span className="text-sky-600 dark:text-sky-500">Vercel</span></Link>.
         </h1>
         <h1 className="mb-6 py-1">© 2024 Shivesh Nandan</h1>

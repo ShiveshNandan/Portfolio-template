@@ -11,7 +11,7 @@ import { Command } from "lucide-react";
 import React from 'react';
 // import { useEffect,  useState } from "react";
 
-const navbar = () => {
+const Navbar = () => {
 
   const [Start, setStart] = React.useState(false)
 
@@ -26,7 +26,7 @@ const navbar = () => {
     <>
     {!Start ? "" : (
       <div className="w-full fixed top-0 z-10">
-        <div data-aos="fade-down" data-aos-delay="50" className="flex backdrop-blur7 w-full m-auto xl:w-6/12 rounded-b-xl justify-between px-6 ">
+        <div data-aos="fade-down" data-aos-delay="50" className="flex backdrop-blur7 w-full m-auto lg:w-6/12 rounded-b-xl justify-between px-6 ">
           <div className="flex align-center ">
            <Sheet>
               <SheetTrigger asChild>
@@ -62,4 +62,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

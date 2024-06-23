@@ -10,8 +10,8 @@ interface ModalInterface {
 const Modal: React.FC<ModalInterface> = ({ Heading, onClose, children }) => {
   return (
     <>
-      <div data-aos="fade-up" className=" backdrop-blur7 flex flex-col fixed top-0 left-0 w-full h-screen z-10">
-        <div className="w-11/12 bg-[#d8d8d8ea] dark:bg-[#1e1e1fea]  mx-auto mt-[10vh] min-h-[40vh] max-h-[80vh] rounded-xl border border-[#3c3d3ed1]">
+      <div data-aos="fade-up" className=" backdrop-blur7 flex flex-col fixed top-0 left-0 w-full lg:m-auto h-screen z-10">
+        <div className="w-11/12 lg:w-6/12 bg-[#d8d8d8ea] dark:bg-[#1e1e1fea]  mx-auto mt-[10vh] min-h-[40vh] max-h-[80vh] rounded-xl border border-[#3c3d3ed1]">
           <div  className="flex justify-between py-3 px-4 text-2xl border-b border-[#3c3d3ed1] ">
             <h1 className="items-center flex font-[500]">{Heading}</h1>
             <Button onClick={onClose} variant="outline" size={"icon"} ><Cross2Icon className="h-6 w-6" /></Button>
