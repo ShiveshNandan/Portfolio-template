@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const about = () => {
+const About = () => {
   return (
     <div className="flex flex-col relative mx-auto py-4 px-2 text-justify indent-0.5 text-sm">
       <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" className="my-1 px-2 mb-3">
@@ -114,4 +114,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

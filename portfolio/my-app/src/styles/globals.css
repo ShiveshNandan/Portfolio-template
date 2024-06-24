@@ -99,10 +99,13 @@
       -moz-transition-property: all;
       -webkit-transition-property: all;
 
-      transition-duration: 600ms;
-      -o-transition-property: 600ms;
-      -moz-transition-property: 600ms;
-      -webkit-transition-property: 600ms;
+      transition-duration: 300ms;
+      -o-transition-property: 300ms;
+      -moz-transition-property: 300ms;
+      -webkit-transition-property: 300ms;
+
+      -ms-overflow-style: thin; 
+    scrollbar-width: thin;
     }
     body {
       @apply bg-background text-foreground;
@@ -111,10 +114,13 @@
       -moz-transition-property: all;
       -webkit-transition-property: all;
 
-      transition-duration: 600ms;
-      -o-transition-property: 600ms;
-      -moz-transition-property: 600ms;
-      -webkit-transition-property: 600ms;
+      transition-duration: 300ms;
+      -o-transition-property: 300ms;
+      -moz-transition-property: 300ms;
+      -webkit-transition-property: 300ms;
+
+      -ms-overflow-style: thin;
+    scrollbar-width: thin;
     }
   }
 
@@ -147,7 +153,6 @@
     border-radius: 2px;
     display: block;
     transition: all 0.6s ease;
-    /* bottom: 200%; */
   }
   html.dark .menu h1:hover::after {
     width: 100%;
@@ -162,4 +167,13 @@
     background-color: #474747;
   }
 
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
 /*  */

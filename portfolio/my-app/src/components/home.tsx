@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import About from "./about";
+import Comand from "./Command";
 import { TypeAnimation } from "react-type-animation";
 import Modal from "./UI Componemts/Modal";
 import { Button } from "./ui/button";
@@ -41,12 +42,13 @@ const skills = [
 ];
 
 const Home = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
   const [Start, setStart] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
   const { theme } = useTheme();
-  console.log(theme);
+  // console.log(theme);
+  
   useEffect(() => {}, [theme]);
 
 
@@ -78,12 +80,13 @@ const Home = () => {
 
   return (
     
-    <div className="px-8 overflow-hidden lg:w-6/12 lg:m-auto">
+    <div className="px-8 overflow-hidden lg:w-6/12 lg:m-auto z-[-1]">
+      
       {!Start ? "" :
        ( <>
 
        {/* ============================== Introduction ============================ */}
-      <div className="flex flex-col pt-[10vh] mt-10 mb-14">
+      <div id="home" className="flex flex-col pt-[120px]">
         <Image
           data-aos="fade-down"
           src={`/photo-${theme === "light" ? "light" : "dark"}.jpg`}
@@ -100,6 +103,8 @@ const Home = () => {
                 "Software engineering student",
                 2000,
                 "MERN stack developer",
+                2000,
+                "Freelancer",
                 2000,
               ]}
               wrapper="span"
@@ -123,7 +128,7 @@ const Home = () => {
 
 
 
-      <div className="transition-all duration-1000 flex flex-col">
+      <div id="about" className=" flex flex-col pt-[14vh]">
         <h1 data-aos="fade-right" data-aos-delay="200" className="text-2xl underline decoration-sky-500 dark:decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">
           About Me
         </h1>
@@ -163,7 +168,7 @@ const Home = () => {
 
 
 
-      <div className="flex flex-col mt-10">
+      <div id="skills" className="flex flex-col pt-[14vh]">
         <h1 data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="text-2xl underline decoration-sky-500 dark:decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">
           Skills
         </h1>
@@ -194,7 +199,7 @@ const Home = () => {
 
 
 
-      <div className="flex flex-col mt-10">
+      <div id="projects" className="flex flex-col pt-[14vh]">
         <h1 data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="text-2xl underline decoration-sky-500 dark:decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">
           Projects
         </h1>
@@ -219,7 +224,7 @@ const Home = () => {
 
 
 
-      <div className="flex flex-col mt-8">
+      <div id="experience" className="flex flex-col pt-[14vh]">
         <h1 data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="text-2xl underline decoration-sky-500 dark:decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">
           Experience
         </h1>
@@ -248,7 +253,7 @@ const Home = () => {
 
 
 
-      <div className="flex flex-col mt-8">
+      <div id="connect" className="flex flex-col mt-8">
         <h1 data-aos="fade-right" data-aos-anchor-placement="top-bottom" className="text-2xl underline decoration-sky-500 dark:decoration-sky-500/80 underline-offset-[5px] decoration-4 tracking-wide antialiased ">
           Get in Touch
         </h1>
