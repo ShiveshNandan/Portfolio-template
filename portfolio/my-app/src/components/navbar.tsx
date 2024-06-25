@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import Change from "./themeChange";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -27,6 +26,8 @@ const Navbar = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
+  const [selected, setselected] = useState("home")
+
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,6 +42,12 @@ const Navbar = () => {
       document.body.classList.remove('modal-open');
     };
   }, [isModalOpen]);
+
+
+
+
+
+  const hoverEff = "mx-2 px-1 font-[600] hover:text-sky-600 dark:hover:text-sky-500";
 
 
 
@@ -63,14 +70,14 @@ const Navbar = () => {
             className="flex backdrop-blur7 w-full m-auto lg:w-6/12 rounded-b-xl justify-between px-6 "
           >
             <div className={`menu md:flex items-center hidden mt-5`}>
-              {/* <div className={`${theme == "light" ? "menu2" : "menu"} md:flex items-center hidden `}>  */}
+              
               <Link
                 to="home"
                 smooth={true}
                 duration={500}
                 className="cursor-pointer"
               >
-                <h1 className="mx-2 px-1 font-[600] hover:text-sky-600 dark:hover:text-sky-500">
+                <h1 onClick={() => {setselected("home")}} className={`${selected === "home" ? "text-sky-600 dark:text-sky-500" : ""} ${hoverEff}`}>
                   Home
                 </h1>
               </Link>
@@ -80,7 +87,7 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                <h1 className="mx-2 px-1 font-[600] hover:text-sky-600 dark:hover:text-sky-500">
+                <h1 onClick={() => {setselected("about")}} className={`${selected === "about" ? "text-sky-600 dark:text-sky-500" : ""} ${hoverEff}`}>
                   About
                 </h1>
               </Link>
@@ -90,7 +97,7 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                <h1 className="mx-2 px-1 font-[600] hover:text-sky-600 dark:hover:text-sky-500">
+                <h1 onClick={() => {setselected("skills")}} className={`${selected === "skills" ? "text-sky-600 dark:text-sky-500" : ""} ${hoverEff}`}>
                   Skills
                 </h1>
               </Link>
@@ -100,7 +107,7 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                <h1 className="mx-2 px-1 font-[600] hover:text-sky-600 dark:hover:text-sky-500">
+                <h1 onClick={() => {setselected("projects")}} className={`${selected === "projects" ? "text-sky-600 dark:text-sky-500" : ""} ${hoverEff}`}>
                   Projects
                 </h1>
               </Link>
@@ -110,7 +117,7 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                <h1 className="mx-2 px-1 font-[600] hover:text-sky-600 dark:hover:text-sky-500">
+                <h1 onClick={() => {setselected("experience")}} className={`${selected === "experience" ? "text-sky-600 dark:text-sky-500" : ""} ${hoverEff}`}>
                   Experience
                 </h1>
               </Link>
@@ -120,7 +127,7 @@ const Navbar = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                <h1 className="mx-2 px-1 font-[600] hover:text-sky-600 dark:hover:text-sky-500">
+                <h1 onClick={() => {setselected("contact")}} className={`${selected === "contact" ? "text-sky-600 dark:text-sky-500" : ""} ${hoverEff}`}>
                   Connect
                 </h1>
               </Link>
