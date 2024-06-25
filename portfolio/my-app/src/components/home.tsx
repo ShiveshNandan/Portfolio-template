@@ -124,7 +124,7 @@ const Home = () => {
               Trying to build a faster web application. Learning about web
               development, React / Next.js and data structure and algorithm.
             </h1>
-            <div className="flex mt-3 justify-center flex-wrap">
+            <div data-aos="fade-up" className="flex mt-3 justify-center flex-wrap">
               <Link href={"https://github.com/shiveshnandan"} target="_blank">
               <Button variant={"outline"} size={"sm"} className="dark:bg-[#333] py-4 mx-2 my-1">
                 <GithubIcon className="w-6 px-1" />
