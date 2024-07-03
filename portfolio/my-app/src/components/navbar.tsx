@@ -67,7 +67,7 @@ const Navbar = () => {
           <div
             data-aos="fade-down"
             data-aos-delay="50"
-            className="flex backdrop-blur7 w-full m-auto lg:w-6/12 rounded-b-xl justify-between px-6 "
+            className="flex backdrop-blur7 w-full m-auto lg:w-[750px] rounded-b-xl justify-between px-6 "
           >
             <div className={`menu md:flex items-center hidden mt-5`}>
               

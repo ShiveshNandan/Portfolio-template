@@ -20,38 +20,22 @@ import {
 import { Badge } from "./ui/badge";
 import Card from "./UI Componemts/ProjectCard";
 import expData from "./data/ExpData";
+import Project from "./data/ProjectData";
+import Skills from "./data/SkillsData";
 import ExpCard from "./UI Componemts/ExperienceCard";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ResumeIcon } from "@radix-ui/react-icons";
-
-const skills = [
-  "JavaScript",
-  "TypeScript",
-  "HTML",
-  "CSS",
-  "SASS",
-  "ReactJS",
-  "NodeJS",
-  "MongoDB",
-  "Tailwind",
-  "Bootstrap",
-  "jQuery",
-  "Git",
-  "ESLint",
-  "C++",
-  "C",
-  "MySQL",
-  "PostgreSQL",
-];
 
 const Home = () => {
   const [Start, setStart] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen2, setModalOpen2] = useState(false);
   const openModal = () => setModalOpen(true);
+  const openModal2 = () => setModalOpen2(true);
   const closeModal = () => setModalOpen(false);
+  const closeModal2 = () => setModalOpen2(false);
   const { theme } = useTheme();
 
   useEffect(() => {}, [theme]);
@@ -71,7 +55,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    if (isModalOpen) {
+    if (isModalOpen || isModalOpen2) {
       document.body.classList.add("modal-open");
     } else {
       document.body.classList.remove("modal-open");
@@ -80,10 +64,10 @@ const Home = () => {
     return () => {
       document.body.classList.remove("modal-open");
     };
-  }, [isModalOpen]);
+  }, [isModalOpen, isModalOpen2]);
 
   return (
-    <div className="px-8 overflow-hidden lg:w-6/12 lg:m-auto z-[-1]">
+    <div className="px-8 overflow-hidden lg:w-[750px] lg:m-auto z-[-1]">
       {!Start ? (
         ""
       ) : (
@@ -92,9 +76,10 @@ const Home = () => {
           <div id="home" className="flex flex-col pt-[120px]">
             <Image
               data-aos="fade-down"
-              src={`/photo-${theme === "light" ? "light" : "dark"}.jpg`}
-              height={100}
-              width={100}
+              // src={`/photo-${theme === "light" ? "light" : "dark"}.jpg`}
+              src={`/shiveshnandan.jpg`}
+              height={10000}
+              width={10000}
               alt={"f"}
               className="border rounded-full w-[90px] mb-8 border-[#333] dark:border-white"
             ></Image>
@@ -212,7 +197,7 @@ const Home = () => {
               Skills
             </h1>
             <div className="my-4">
-              {skills.map((skill, index) => (
+              {Skills.map((skill, index) => (
                 <Badge
                   data-aos="fade-up"
                   data-aos-anchor-placement="top-bottom"
@@ -221,7 +206,7 @@ const Home = () => {
                   className="my-1 mx-1 text-[14px]"
                 >
                   <Image
-                    src={`/${skill}.png`}
+                    src={`/Skills/${skill}.png`}
                     alt={`${skill}`}
                     height={18}
                     width={18}
@@ -251,15 +236,52 @@ const Home = () => {
               {!Start ? (
                 "loading"
               ) : (
-                <Card
-                  Heading={"Make engineering Easy"}
-                  Description={"lorem20"}
-                  link={"gdgg"}
-                  Img={"/ggsipu.png"}
-                  techUse={"ddd"}
-                ></Card>
+                <div className="flex flex-wrap">
+                {Project.slice(0,3).map((project:any, index:any) => (
+                  <Card
+                    Title={project.heading}
+                    Description={project.summary}
+                    link={project.link}
+                    code={project.code}
+                    Img={project.img}
+                    techUse={project.tech}
+                    key={index}
+                    data-aos="fade-up" 
+                    data-aos-anchor-placement="top-bottom"
+                  />
+                ))}
+                </div>
               )}
             </div>
+            <div className="flex justify-end">
+            <Button
+                onClick={openModal2}
+                variant={"outline"}
+                className="text-sky-600 dark:text-sky-500 font-bold w-fit"
+              >
+                {" "}
+                View All Projects <ArrowUpRightFromSquare className="mx-2 h-4 w-4" />
+              </Button>
+            </div>
+
+            {isModalOpen2 && (
+              <Modal Heading="Projects" onClose={closeModal2}>
+                {/* <About /> */}
+                <div className="flex flex-wrap">
+                {Project.map((project:any, index:any) => (
+                  <Card
+                    Title={project.heading}
+                    Description={project.summary}
+                    link={project.link}
+                    code={project.code}
+                    Img={project.img}
+                    techUse={project.tech}
+                    key={index}
+                  />
+                ))}
+                </div>
+              </Modal>
+            )}
           </div>
 
           {/* ============================== Experience ============================ */}
@@ -279,7 +301,7 @@ const Home = () => {
                   : expData.map((exp, index) => (
                       <div key={index}>
                         <ExpCard
-                          img={exp.img}
+                          img={`/Experience${exp.img}`}
                           companyName={exp.companyName}
                           role={exp.role}
                           description={exp.description}
