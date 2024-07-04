@@ -126,7 +126,7 @@ const Home = () => {
                 <ArrowUpRightFromSquare className="h-3 w-3 text-gray-500" />
               </Button>
               </Link>
-              <Link href={"https://drive.google.com/file/d/1sH1I8OrjFCVuXffHQ8xvTVGAPBR4PW-c/view?usp=sharing"} target="_blank">
+              <Link href={"https://drive.google.com/file/d/1Qnn92DgOtPqbTMIpmIDYhioShH5yihQS/view?usp=sharing"} target="_blank">
               <Button variant={"outline"} size={"sm"} className="dark:bg-[#333] py-4 mx-2 my-1">
                 <NotebookTextIcon className="w-6 px-1" />
                 <p className="font-[500] text-sm tracking-wide">Shivesh Nandan</p>
