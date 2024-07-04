@@ -35,7 +35,7 @@ const Card: React.FC<CardInterface> = ({Img,Title,Description,link,code,techUse}
           {/* <NotebookTextIcon className='w-4 h-4'></NotebookTextIcon> */}
           {techUse.map((items:any,index:any) => (
             <div key={index}>
-     <Image height={100} width={1000} src={`/${items}.png`} alt='' className='rounded-full w-5 h-5 border mr-1'/>               
+     <Image height={100} width={1000} src={`/Skills/${items}.png`} alt='' className='rounded-full w-5 h-5 border mr-1'/>               
             </div>
           ))}
         </div>
