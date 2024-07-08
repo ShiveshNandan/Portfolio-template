@@ -2,19 +2,16 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import About from "./about";
-import Comand from "./Command";
 import { TypeAnimation } from "react-type-animation";
 import Modal from "./UI Componemts/Modal";
 import { Button } from "./ui/button";
 import {
   ArrowUpRightFromSquare,
-  Github,
   GithubIcon,
   InstagramIcon,
   LinkedinIcon,
   MailIcon,
   NotebookTextIcon,
-  Phone,
   TwitterIcon,
 } from "lucide-react";
 import { Badge } from "./ui/badge";
@@ -80,7 +77,7 @@ const Home = () => {
               src={`/shiveshnandan.jpg`}
               height={10000}
               width={10000}
-              alt={"f"}
+              alt={"Profile Photo"}
               className="border rounded-full w-[90px] mb-8 border-[#333] dark:border-white"
             ></Image>
             <div data-aos="fade-right" className="">
@@ -109,30 +106,65 @@ const Home = () => {
               Trying to build a faster web application. Learning about web
               development, React / Next.js and data structure and algorithm.
             </h1>
-            <div data-aos="fade-up" className="flex mt-3 justify-center flex-wrap">
+            <div
+              data-aos="fade-up"
+              className="flex mt-3 justify-center flex-wrap"
+            >
               <Link href={"https://github.com/shiveshnandan"} target="_blank">
-              <Button variant={"outline"} size={"sm"} className="dark:bg-[#333] py-4 mx-2 my-1">
-                <GithubIcon className="w-6 px-1" />
-                <p className="font-[500] text-sm tracking-wide">@ShiveshNandan</p>
-                <p className=" text-[11px] px-2 text-gray-500 flex pt-1">Github</p>
-                <ArrowUpRightFromSquare className="h-3 w-3 text-gray-500" />
-              </Button>
+                <Button
+                  variant={"outline"}
+                  size={"sm"}
+                  className="dark:bg-[#333] py-4 mx-2 my-1"
+                >
+                  <GithubIcon className="w-6 px-1" />
+                  <p className="font-[500] text-sm tracking-wide">
+                    @ShiveshNandan
+                  </p>
+                  <p className=" text-[11px] px-2 text-gray-500 flex pt-1">
+                    Github
+                  </p>
+                  <ArrowUpRightFromSquare className="h-3 w-3 text-gray-500" />
+                </Button>
               </Link>
-              <Link href={"https://linkedin.com/in/shiveshnandan"} target="_blank">
-              <Button variant={"outline"} size={"sm"} className="dark:bg-[#333] py-4 mx-2 my-1">
-                <LinkedinIcon className="w-6 px-1" />
-                <p className="font-[500] text-sm tracking-wide">@shiveshnandan</p>
-                <p className=" text-[11px] px-2 text-gray-500 flex pt-1">Linkedin</p>
-                <ArrowUpRightFromSquare className="h-3 w-3 text-gray-500" />
-              </Button>
+              <Link
+                href={"https://linkedin.com/in/shiveshnandan"}
+                target="_blank"
+              >
+                <Button
+                  variant={"outline"}
+                  size={"sm"}
+                  className="dark:bg-[#333] py-4 mx-2 my-1"
+                >
+                  <LinkedinIcon className="w-6 px-1" />
+                  <p className="font-[500] text-sm tracking-wide">
+                    @shiveshnandan
+                  </p>
+                  <p className=" text-[11px] px-2 text-gray-500 flex pt-1">
+                    Linkedin
+                  </p>
+                  <ArrowUpRightFromSquare className="h-3 w-3 text-gray-500" />
+                </Button>
               </Link>
-              <Link href={"https://drive.google.com/file/d/1Qnn92DgOtPqbTMIpmIDYhioShH5yihQS/view?usp=sharing"} target="_blank">
-              <Button variant={"outline"} size={"sm"} className="dark:bg-[#333] py-4 mx-2 my-1">
-                <NotebookTextIcon className="w-6 px-1" />
-                <p className="font-[500] text-sm tracking-wide">Shivesh Nandan</p>
-                <p className=" text-[11px] px-2 text-gray-500 flex pt-1">Resume</p>
-                <ArrowUpRightFromSquare className="h-3 w-3 text-gray-500" />
-              </Button>
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1Qnn92DgOtPqbTMIpmIDYhioShH5yihQS/view?usp=sharing"
+                }
+                target="_blank"
+              >
+                <Button
+                  variant={"outline"}
+                  size={"sm"}
+                  className="dark:bg-[#333] py-4 mx-2 my-1"
+                >
+                  <NotebookTextIcon className="w-6 px-1" />
+                  <p className="font-[500] text-sm tracking-wide">
+                    Shivesh Nandan
+                  </p>
+                  <p className=" text-[11px] px-2 text-gray-500 flex pt-1">
+                    Resume
+                  </p>
+                  <ArrowUpRightFromSquare className="h-3 w-3 text-gray-500" />
+                </Button>
               </Link>
             </div>
           </div>
@@ -229,56 +261,64 @@ const Home = () => {
               Projects
             </h1>
             <div
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
+              // data-aos="fade-up"
+              // data-aos-anchor-placement="top-bottom"
               className="my-2 rounded-xl bg"
             >
               {!Start ? (
                 "loading"
               ) : (
-                <div className="flex flex-wrap">
-                {Project.slice(0,3).map((project:any, index:any) => (
-                  <Card
-                    Title={project.heading}
-                    Description={project.summary}
-                    link={project.link}
-                    code={project.code}
-                    Img={project.img}
-                    techUse={project.tech}
-                    key={index}
-                    data-aos="fade-up" 
-                    data-aos-anchor-placement="top-bottom"
-                  />
-                ))}
+                <div className="flex justify-around flex-wrap">
+                  {Project.slice(0, 3).map((project: any, index: any) => (
+                    <div
+                      className="flex"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"
+                      key={index}
+                    >
+                      <Card
+                        Title={project.heading}
+                        Description={project.summary}
+                        link={project.link}
+                        code={project.code}
+                        Img={project.img}
+                        techUse={project.tech}
+                      />
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
-            <div className="flex justify-end">
-            <Button
+            <div
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
+              className="flex justify-end"
+            >
+              <Button
                 onClick={openModal2}
                 variant={"outline"}
                 className="text-sky-600 dark:text-sky-500 font-bold w-fit"
               >
                 {" "}
-                View All Projects <ArrowUpRightFromSquare className="mx-2 h-4 w-4" />
+                View All Projects{" "}
+                <ArrowUpRightFromSquare className="mx-2 h-4 w-4" />
               </Button>
             </div>
 
             {isModalOpen2 && (
               <Modal Heading="Projects" onClose={closeModal2}>
-                {/* <About /> */}
                 <div className="flex flex-wrap">
-                {Project.map((project:any, index:any) => (
-                  <Card
-                    Title={project.heading}
-                    Description={project.summary}
-                    link={project.link}
-                    code={project.code}
-                    Img={project.img}
-                    techUse={project.tech}
-                    key={index}
-                  />
-                ))}
+                  {Project.map((project: any, index: any) => (
+                    <Card
+                      Title={project.heading}
+                      Description={project.summary}
+                      link={project.link}
+                      code={project.code}
+                      Img={project.img}
+                      techUse={project.tech}
+                      key={index}
+                    />
+                  ))}
                 </div>
               </Modal>
             )}
@@ -372,13 +412,6 @@ const Home = () => {
                   </Button>
                 </Link>
               </div>
-              {/* <div className="flex mt-4">
-              <Button data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay='150' size={"icon"} className="mx-1">
-                {" "}
-                <Phone/>{" "} 
-              </Button>
-                <p className="flex align-middle items-center">+917840861217</p>
-          </div> */}
             </div>
           </div>
 
