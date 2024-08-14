@@ -16,7 +16,7 @@ const ModeToggle = () => {
 
   return (
     <>
-    <div onClick={() => ChangeTheme()}>   
+    <div className="h-full flex justify-center flex-col" onClick={() => ChangeTheme()}>   
     {useTheme().theme === 'light' ? 
     <SunIcon  className="w-full"></SunIcon> 
     : 

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import About from "./about";
+import Getintouch from "./getintouch";
 import { TypeAnimation } from "react-type-animation";
 import Modal from "./UI Componemts/Modal";
 import { Button } from "./ui/button";
@@ -147,7 +148,7 @@ const Home = () => {
               </Link>
               <Link
                 href={
-                  "https://drive.google.com/file/d/1Qnn92DgOtPqbTMIpmIDYhioShH5yihQS/view?usp=sharing"
+                  "https://drive.google.com/file/d/1pLK09sfY0jLksIqwSOiMBNH2QXBIW6xC/view?usp=sharing"
                 }
                 target="_blank"
               >
@@ -355,7 +356,7 @@ const Home = () => {
 
           {/* ============================== Contact me ============================ */}
 
-          <div id="connect" className="flex flex-col mt-8">
+          <div id="connect" className="flex flex-col mt-8 ">
             <h1
               data-aos="fade-right"
               data-aos-anchor-placement="top-bottom"
@@ -363,13 +364,16 @@ const Home = () => {
             >
               Get in Touch
             </h1>
+            <p data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom" className="mt-3 text-sm">Feel free to reach out to me for any queries or collaborations.</p>
+            <Getintouch/>
             <div className="flex flex-col my-2 rounded-xl items-center">
               <h1
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 className="m-auto my-4 text-center"
               >
-                Feel free to connect
+              OR 
               </h1>
               <div className="flex">
                 <Link href={"https://instagram.com/shivesh_nandan"}>

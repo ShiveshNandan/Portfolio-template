@@ -265,6 +265,7 @@ const Navbar = () => {
               >
 
                 <div
+                className="h-full flex items-center "
             onClick={openModal}
           >
               <Command className="w-full" />
@@ -273,11 +274,11 @@ const Navbar = () => {
                
               </div>
               <div
-                data-aos="fade-down"
-                data-aos-delay="250"
+                // data-aos="fade-down"
+                // data-aos-delay="250"
                 className="flex justify-center flex-col w-10 h-10 overflow-hidden rounded-xl bg-[#d8d8d8] dark:bg-[#333] mx-2 cursor-pointer"
               >
-                <Change />
+                <Change/>
               </div>
             </div>
           </div>
