@@ -1,6 +1,7 @@
 "use client"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
+import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 
 const Page = () => {
@@ -16,6 +17,25 @@ const Page = () => {
   }
   function isNameValid(username:String) {
     return username.length > 3;
+  }  
+
+
+  const onSignup = async () => {
+    try {
+      setloading(true)
+      const timed = new Date().toLocaleString();
+      const response = await axios.post("/api/message",{username,email,message,timed});
+      if (response.data.message === "success") {
+      toast.success("Thanks for your message!",{theme:"colored", position: "top-center",autoClose: 2000})
+      setloading(false);
+      setemail("");
+      setmessage("");
+      setusername("");
+      }
+    } catch (error:any) {
+      setloading(false)
+      toast.error(error.message,{theme:"colored", position: "top-center",autoClose: 2000})
+    }
   }
 
   const messageSend = () => {
@@ -23,18 +43,7 @@ const Page = () => {
         if(isValidEmail(email)){
           if(isNameValid(username)){
             if(isNameValid(message)){
-                // const res = AddMessage(message,setmessage,email,setemail,username,setusername,setloading);
-                // res.then(result => {
-                //   console.log(result);
-                //   if(!result){
-                //     toast.success("Thanks for your words!",{theme:"colored", position: "top-center",autoClose: 2000});          
-                //   }else{
-                //     setloading(false);
-                //     toast.error("can't send message at the moment",{theme:"colored", position: "top-center",autoClose: 2000});
-                //   }
-                // }).catch(error => {
-                //     console.error(error);
-                // });
+                onSignup();
             }else{
               setloading(false);
               toast.error("Message is too short to be send !",{theme:"colored", position: "top-center",autoClose: 2000});

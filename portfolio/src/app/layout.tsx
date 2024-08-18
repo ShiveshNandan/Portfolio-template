@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   description: " Hello! I'm final-year CSE student at USICT, GGSIPU Delhi.Over the past year, I've immersed myself in web development, creating projects with frameworks like React.js and now focusing on Next.js. This portfolio showcases my work using Next.js, Tailwind CSS, and ShadCN to build dynamic, responsive applications. I'm eager to find internships or freelance opportunities to expand my skills further. Besides coding, I enjoy photography. Let's connect and create something amazing together!",
 };
 
-// export const [first, setfirst] = useState(false);
 
 export default function RootLayout({
   children,
