@@ -64,6 +64,8 @@ A personal portfolio website, <a href="https://shiveshnandan.vercel.app/" target
 
 - **Detailed Personalization** : Write as much as you want about yourself and showcase your projects extensively.
 
+ <i> **note:** you can remove the get in touch send message section if you want, as it is not part of frontend.</i>
+
 
 ## Contributing
 
