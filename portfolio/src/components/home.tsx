@@ -101,7 +101,7 @@ const Home = () => {
               </p>
             </div>
             <h1
-              data-aos="fade-left"
+              data-aos="fade-up"
               className=" pt-6 text-sm text-[#333] dark:text-[#d8d8d8] leading-[21px] "
             >
               Trying to build a faster web application. Learning about web
@@ -148,7 +148,7 @@ const Home = () => {
               </Link>
               <Link
                 href={
-                  "https://drive.google.com/file/d/1pLK09sfY0jLksIqwSOiMBNH2QXBIW6xC/view?usp=sharing"
+                  "https://drive.google.com/file/d/1GA43mA1B_jijd1tjExTGa44Ev3xLixr0/view?usp=sharing"
                 }
                 target="_blank"
               >
