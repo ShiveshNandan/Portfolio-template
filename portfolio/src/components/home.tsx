@@ -182,7 +182,7 @@ const Home = () => {
               About Me
             </h1>
             <p
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="200"
               data-aos-anchor-placement="top-bottom"
               className="line-clamp- my-3 tracking-[0.3px] "

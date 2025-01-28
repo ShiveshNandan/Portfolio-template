@@ -16,12 +16,12 @@ const projects = [
         tech: ["nextJS","TypeScript","Tailwind","Shadcn","NodeJS","MongoDB","CSS"]
     },
     {
-        heading:"Authentication-app",
-        summary:`An email password authentication application designed for seamless and secure user access management. (Currently I am working on it..)`,
-        code:"https://github.com/ShiveshNandan/Authentication",
-        link:"/",
-        img:"Auth.png",
-        tech: ["nextJS","TypeScript","Tailwind","Shadcn"]
+        heading:"JWT-Authentication-app",
+        summary:`This Node.js and Express.js authentication system uses JWT for secure sessions, with features like user registration, login, email verification, and password recovery via Gmail SMTP. It is scalable, reliable, and easy to deploy on Vercel.`,
+        code:"https://github.com/ShiveshNandan/JWT-authenticatify",
+        link:"https://jwt-authenticatify.vercel.app/",
+        img:"JWT-Auth.png",
+        tech: ["NodeJS"]
     },
     {
         heading:"Music system",
