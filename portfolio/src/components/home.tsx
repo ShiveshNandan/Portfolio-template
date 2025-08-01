@@ -86,12 +86,12 @@ const Home = () => {
               <p className="mt-1">
                 <TypeAnimation
                   sequence={[
-                    "Software engineering student",
+                    "Engineer",
                     2000,
                     "MERN stack developer",
                     2000,
-                    "Freelancer",
-                    2000,
+                    // "Freelancer",
+                    // 2000,
                   ]}
                   wrapper="span"
                   speed={65}
