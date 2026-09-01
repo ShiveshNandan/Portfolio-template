@@ -4,17 +4,17 @@ const talkschema = new mongoose.Schema({
     username: {
         type : String,
         required : [true, "It is required sir"],
-        unique : true
+        unique : false
     },
     email: {
         type : String,
         required : [true, "It is required sir"],
-        unique : true
+        unique : false
     },
     message: {
         type : String,
         required : [true, "It is required sir"],
-        unique : true
+        unique : false
     },
     timed: {
         type : String,
