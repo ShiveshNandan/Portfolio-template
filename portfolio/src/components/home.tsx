@@ -86,12 +86,12 @@ const Home = () => {
               <p className="mt-1">
                 <TypeAnimation
                   sequence={[
-                    "Engineer",
+                    "Software Engineer @ Samsung R&D",
                     2000,
-                    "MERN stack developer",
+                    "Full-Stack Developer",
                     2000,
-                    // "Freelancer",
-                    // 2000,
+                    "AI Developer",
+                    2000,
                   ]}
                   wrapper="span"
                   speed={65}
@@ -104,8 +104,9 @@ const Home = () => {
               data-aos="fade-up"
               className=" pt-6 text-sm text-[#333] dark:text-[#d8d8d8] leading-[21px] "
             >
-              Trying to build a faster web application. Learning about web
-              development, React / Next.js and data structure and algorithm.
+              Building fast and impactful web experiences with modern
+              technologies, while exploring AI and solving interesting problems
+              along the way.
             </h1>
             <div
               data-aos="fade-up"
@@ -187,15 +188,15 @@ const Home = () => {
               data-aos-anchor-placement="top-bottom"
               className="line-clamp- my-3 tracking-[0.3px] "
             >
-              Hello! I&apos;m final-year CSE student at USICT, GGSIPU Delhi.
-              Over the past year, I&apos;ve immersed myself in web development,
-              creating projects with frameworks like React.js and now focusing
-              on Next.js. This portfolio showcases my work using Next.js,
-              Tailwind CSS, and ShadCN to build dynamic, responsive
-              applications. I&apos;m eager to find internships or freelance
-              opportunities to expand my skills further. Besides coding, I enjoy
-              photography. Let&apos;s connect and create something amazing
-              together!
+              Hello! I&apos;m a Software Engineer with experience at Samsung R&D,
+              where I worked on Smart TV software, Tizen-based products and
+              internal tools. I&apos;m a Computer Science garaduate from USICT,
+              GGSIPU Delhi, with a strong foundation in software development and
+              experience building applications using React.js, Next.js,
+              TypeScript, Node.js, FastAPI, MySQL and MongoDB. I&apos;m focused
+              on building scalable and practical software products, while
+              exploring the possibilities of AI in modern applications. Beyond
+              coding, I enjoy photography and creating visual content.
             </p>
             <div
               data-aos="fade-left"
@@ -364,16 +365,21 @@ const Home = () => {
             >
               Get in Touch
             </h1>
-            <p data-aos="fade-right"
-              data-aos-anchor-placement="top-bottom" className="mt-3 text-sm">Feel free to reach out to me for any queries or collaborations.</p>
-            <Getintouch/>
+            <p
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+              className="mt-3 text-sm"
+            >
+              Feel free to reach out to me for any queries or collaborations.
+            </p>
+            <Getintouch />
             <div className="flex flex-col my-2 rounded-xl items-center">
               <h1
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 className="m-auto my-4 text-center"
               >
-              OR 
+                OR
               </h1>
               <div className="flex">
                 <Link href={"https://instagram.com/shivesh_nandan"}>
