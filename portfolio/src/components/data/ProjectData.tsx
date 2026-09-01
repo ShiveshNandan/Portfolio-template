@@ -5,7 +5,7 @@ const projects = [
         code:"https://github.com/ShiveshNandan/personal_website",
         link:"https://shiveshnandan.vercel.app",
         img:"Portfolio.png",
-        tech: ["nextJS","TypeScript","Tailwind","Shadcn"]
+        tech: ["nextJS","TypeScript","Tailwind CSS","Shadcn"]
     },
     {
         heading:"Make engineering easy",
@@ -13,7 +13,7 @@ const projects = [
         code:"https://github.com/ShiveshNandan/MakeEngineeringEasy",
         link:"https://make-engineering-easy.vercel.app",
         img:"MakeEasy.png",
-        tech: ["nextJS","TypeScript","Tailwind","Shadcn","NodeJS","MongoDB","CSS"]
+        tech: ["nextJS","TypeScript","Tailwind CSS","Shadcn","NodeJS","MongoDB","CSS"]
     },
     {
         heading:"JWT-Authentication-app",
